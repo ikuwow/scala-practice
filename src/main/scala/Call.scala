@@ -25,5 +25,7 @@ object Call { // object means
     bob.sayHi
 
     val cathy = User(name = "Cathy") // use instance method (apply() is used)
+    cathy.sayHi
+    cathy.getInfo
   }
 }
