@@ -27,7 +27,7 @@ object FunctionObject {
     println(msg("hoge", "degawa", "GOod"))
 
     // 部分適用
-    // val mstToDegawa = msg(_: String, "degawa", _: String)
+    val msgToDegawa = msg(_: String, "degawa", _: String)
     val msgFunc = msg _ // method to function object
 
     println(msgToDegawa("ikuwow", "Hello"))
