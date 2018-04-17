@@ -19,5 +19,16 @@ object Other {
     println(scores.isEmpty)
     println(scores.head)
     println(scores(2))
+
+    // Set
+    val answers = Set(5, 3, 8, 5)
+    println(answers) // 5, 3, 8
+    println(answers.contains(3))
+    println(answers(3))
+
+    val validAnswers = Set(3, 5, 7, 9)
+    println(answers & validAnswers)
+    println(answers | validAnswers)
+    println(answers &~ validAnswers)
   }
 }
