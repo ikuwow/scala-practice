@@ -30,5 +30,17 @@ object Other {
     println(answers & validAnswers)
     println(answers | validAnswers)
     println(answers &~ validAnswers)
+
+    // Map
+    val sales = Map("ikuwow" -> 30, "moge" -> 400)
+    println(sales("ikuwow"))
+    println(sales("moge"))
+    println(sales.contains("hoge"))
+    println(sales.getOrElse("hoge", "empty"))
+
+    // Immutable ↑
+    // Mutable ↓
+
+    var mutableMap = scala.collection.mutable.Map("ikuwow" -> 30, "moge" -> 400)
   }
 }
